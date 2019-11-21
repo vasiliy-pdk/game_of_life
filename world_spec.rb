@@ -105,7 +105,7 @@ describe 'World' do
     end
   
     context 'when simulation is run continuously' do
-      it 'keeps simulating properly' do
+      it 'keeps simulating properly with blinker' do
         world = World.new [
           [0, 0, 0],
           [1, 1, 1],
@@ -126,6 +126,34 @@ describe 'World' do
           [0, 1, 0],
           [0, 1, 0],
           [0, 1, 0]
+        ])
+      end
+
+      it 'keeps simulating properly with Glider' do
+        world = World.new [
+          [1, 0, 0, 0],
+          [0, 1, 1, 0],
+          [1, 1, 0, 0],
+          [0, 0, 0, 0]
+        ]
+
+        expect(world.simulate).to eq([
+          [0, 1, 0, 0],
+          [0, 0, 1, 0],
+          [1, 1, 1, 0],
+          [0, 0, 0, 0]
+        ])
+        expect(world.simulate).to eq([
+          [0, 0, 0, 0],
+          [1, 0, 1, 0],
+          [0, 1, 1, 0],
+          [0, 1, 0, 0]
+        ])
+        expect(world.simulate).to eq([
+          [0, 0, 0, 0],
+          [0, 0, 1, 0],
+          [1, 0, 1, 0],
+          [0, 1, 1, 0]
         ])
       end
     end
