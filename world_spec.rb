@@ -111,11 +111,21 @@ describe 'World' do
           [1, 1, 1],
           [0, 0, 0]
         ]
-        world.simulate
+
+        expect(world.simulate).to eq([
+          [0, 1, 0],
+          [0, 1, 0],
+          [0, 1, 0]
+        ])
         expect(world.simulate).to eq([
           [0, 0, 0],
           [1, 1, 1],
           [0, 0, 0]
+        ])
+        expect(world.simulate).to eq([
+          [0, 1, 0],
+          [0, 1, 0],
+          [0, 1, 0]
         ])
       end
     end
