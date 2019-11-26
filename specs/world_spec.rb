@@ -1,4 +1,4 @@
-require_relative 'world'
+require_relative '../world'
 
 describe 'World' do
   describe '#simulate' do

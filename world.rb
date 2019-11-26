@@ -1,3 +1,5 @@
+require_relative 'grid'
+
 class World
   DEAD_CELL = 0
   ALIVE_CELL = 1
