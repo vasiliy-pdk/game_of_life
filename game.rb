@@ -1,7 +1,8 @@
 class Game
-  def initialize(world:, renderer:)
+  def initialize(input:, world:, renderer:)
     @world = world
     @renderer = renderer
+    @input = input
   end
 
   def run
@@ -11,15 +12,11 @@ class Game
     end while should_proceed?
   end
 
-  def should_proceed?
-    result = ''
-    $stdin.read_nonblock(1, result)
-    return false unless result.empty?
-  rescue
-    true
+  def should_proceed? 
+    !input.stop_the_game?
   end
 
   private
 
-  attr_reader :world, :renderer
+  attr_reader :input, :world, :renderer
 end
