@@ -12,14 +12,16 @@
 # Notes: more on ASCII https://en.wikipedia.org/wiki/ASCII ; https://en.wikipedia.org/wiki/ANSI_art ; https://en.wikipedia.org/wiki/ANSI_escape_code 
 class ConsoleRenderer
   HOME_CURSOR = "\e[H"
+  CLEAR_SCREEN = "\e[2J"
 
   def initialize(output = $stdout)
     @out = output
   end
 
   def render(grid)
-    @out.puts HOME_CURSOR
-    @out.print format(grid)
+    out.print HOME_CURSOR
+    out.puts CLEAR_SCREEN
+    out.print format(grid)
   end
 
   private
@@ -33,4 +35,6 @@ class ConsoleRenderer
   def format_cell(cell)
     [' ', '#'][cell]
   end
+
+  attr_reader :out
 end

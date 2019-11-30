@@ -10,7 +10,7 @@ describe ConsoleRenderer do
         [0,0,0,1]
       ]
       text = <<-TEXT
-\e[H
+\e[H\e[2J
 ####
 ### 
     

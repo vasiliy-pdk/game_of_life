@@ -1,7 +1,6 @@
 # Run this file script through a terminal to visually verify the output. 
-# Note: the related unit test is located in the renderer_spec.rb 
 
-require_relative '../renderer'
+require_relative '../console_renderer'
 
 grid_data = [
   [1,1,1,1],
@@ -10,4 +9,4 @@ grid_data = [
   [0,0,0,1]
 ]
 
-Renderer.new.render grid_data
+ConsoleRenderer.new.render grid_data

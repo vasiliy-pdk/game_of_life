@@ -10,8 +10,7 @@ deliberate practice of TDD and Simple Design in Ruby. Inspired by the [Global Da
 - [ ] Put Input under the test
 - [ ] Add Gemfile to have deterministic dependencies
 - [ ] Add guard to automate test execution on every change
-- [ ] Push to GitHub, so others can try it
-- [ ] Improve appearance: title with command bar, better symbols, colours, borders
+- [ ] Improve appearance: title with command bar, better symbols, colours, borders, clear after stop
 - [ ] Random seed
 - [ ] Add more commands: speed up, speed down, restart, specify another seed file
 - [ ] Place the cells on the grid while running
