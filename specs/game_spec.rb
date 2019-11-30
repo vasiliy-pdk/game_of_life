@@ -1,4 +1,4 @@
-require_relative '../game'
+require_relative '../lib/game'
 
 describe Game do 
   it 'runs the game until receives stop input' do

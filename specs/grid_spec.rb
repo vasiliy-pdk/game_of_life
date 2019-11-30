@@ -1,4 +1,4 @@
-require_relative '../grid'
+require_relative '../lib/grid'
 
 describe 'Grid' do
   describe '#neighbours' do

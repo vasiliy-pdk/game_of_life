@@ -3,7 +3,7 @@ deliberate practice of TDD and Simple Design in Ruby. Inspired by the [Global Da
 
 # How to run?
 
-`$ ruby main.rb`
+`$ bin/game_of_life`
 
 # TODO
 

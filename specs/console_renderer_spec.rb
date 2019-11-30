@@ -1,4 +1,4 @@
-require_relative '../console_renderer'
+require_relative '../lib/console_renderer'
 
 describe ConsoleRenderer do
   describe '#render' do

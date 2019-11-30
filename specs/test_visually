@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+# Run this file through a terminal to visually verify the output. 
+
+require_relative '../lib/console_renderer'
+
+grid_data = [
+  [1,1,1,1],
+  [1,1,1,0],
+  [0,0,0,0],
+  [0,0,0,1]
+]
+
+ConsoleRenderer.new.render grid_data
