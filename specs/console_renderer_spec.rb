@@ -1,6 +1,6 @@
-require_relative '../renderer'
+require_relative '../console_renderer'
 
-describe Renderer do
+describe ConsoleRenderer do
   describe '#render' do
     it 'displays the world on the scene' do
       grid_data = [
@@ -18,7 +18,7 @@ describe Renderer do
       TEXT
 
       output = StringIO.new
-      renderer = Renderer.new(output)
+      renderer = ConsoleRenderer.new(output)
       
       renderer.render(grid_data)
 

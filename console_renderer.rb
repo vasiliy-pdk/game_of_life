@@ -10,7 +10,7 @@
 # 3.3 Box drawing: https://charbase.com/block/box-drawing ; https://en.wikipedia.org/wiki/Block_Elements 
 #
 # Notes: more on ASCII https://en.wikipedia.org/wiki/ASCII ; https://en.wikipedia.org/wiki/ANSI_art ; https://en.wikipedia.org/wiki/ANSI_escape_code 
-class Renderer
+class ConsoleRenderer
   HOME_CURSOR = "\e[H"
 
   def initialize(output = $stdout)
