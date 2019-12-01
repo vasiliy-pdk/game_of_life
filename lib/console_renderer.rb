@@ -9,7 +9,8 @@
 # 3.2 Unicode symbols: https://charbase.com/ output by "\u2620"; ASCII symbols: 
 # 3.3 Box drawing: https://charbase.com/block/box-drawing ; https://en.wikipedia.org/wiki/Block_Elements 
 #
-# Notes: more on ASCII https://en.wikipedia.org/wiki/ASCII ; https://en.wikipedia.org/wiki/ANSI_art ; https://en.wikipedia.org/wiki/ANSI_escape_code 
+# Notes: more on ASCII https://en.wikipedia.org/wiki/ASCII ; https://en.wikipedia.org/wiki/ANSI_art ; https://en.wikipedia.org/wiki/ANSI_escape_code
+# http://www.termsys.demon.co.uk/vtansi.htm  
 class ConsoleRenderer
   HOME_CURSOR = "\e[H"
   CLEAR_SCREEN = "\e[2J"
