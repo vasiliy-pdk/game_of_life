@@ -8,11 +8,10 @@ deliberate practice of TDD and Simple Design in Ruby. Inspired by the [Global Da
 # TODO
 
 - [ ] Put Input under the test
-- [ ] Add Gemfile to have deterministic dependencies
-- [ ] Add guard to automate test execution on every change
+- [ ] Add more commands: speed up, speed down, restart, specify another seed file
 - [ ] Improve appearance: title with command bar, better symbols, colours, borders, clear after stop
 - [ ] Random seed
-- [ ] Add more commands: speed up, speed down, restart, specify another seed file
+- [ ] Add guard to automate test execution on every change
 - [ ] Place the cells on the grid while running
-- [ ] Better graphics with JRuby and libGXV, compile to Web Assembly with TeaVM 
 - [ ] Infinite grid
+- [ ] Better graphics with JRuby and libGXV, compile to Web Assembly with TeaVM.
