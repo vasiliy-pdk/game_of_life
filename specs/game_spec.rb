@@ -1,7 +1,7 @@
 require_relative '../lib/game'
 
-describe Game do 
-  it 'runs the game until receives stop input' do
+describe Game do
+  it 'runs the game until receives stop command from input' do
     data_to_render = double('Some Data')
     world = double('World', simulate: data_to_render)
     renderer = double('Renderer', render: true)
@@ -19,7 +19,9 @@ describe Game do
       @stop_on_frame = stop_on_frame
     end
 
-    def stop_the_game?
+    def include?(command)
+      return unless command == :stop
+
       @frames_counter += 1
       @frames_counter == @stop_on_frame
     end

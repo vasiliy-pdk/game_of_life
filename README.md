@@ -7,11 +7,12 @@ deliberate practice of TDD and Simple Design in Ruby. Inspired by the [Global Da
 
 # TODO
 
-- [ ] Put Input under the test
-- [ ] Add more commands: speed up, speed down, restart, specify another seed file
+- [ ] Add more commands: restart, speed up, speed down, specify another seed file
 - [ ] Improve appearance: title with command bar, better symbols, colours, borders, clear after stop
 - [ ] Random seed
 - [ ] Add guard to automate test execution on every change
 - [ ] Place the cells on the grid while running
 - [ ] Infinite grid
-- [ ] Better graphics with JRuby and libGXV, compile to Web Assembly with TeaVM.
+- [ ] Put ConsoleInputReader under the test? Currently I've tried to keep the reader as simple as possible to avoid writing crazy system test.
+      Perhaps, there could be sort of End to End test, where we run the game, collect output to file and compare it with previous one.
+- [ ] Better graphics with JRuby and libGVX, compile to Web Assembly with TeaVM.

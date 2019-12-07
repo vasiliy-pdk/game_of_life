@@ -12,8 +12,8 @@ class Game
     end while should_proceed?
   end
 
-  def should_proceed? 
-    !input.stop_the_game?
+  def should_proceed?
+    !input.include? :stop
   end
 
   private
